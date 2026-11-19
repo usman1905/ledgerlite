@@ -1,7 +1,7 @@
 :root{--bg:#f6f7fb;--panel:#fff;--line:#e4e7ef;--ink:#152038;--muted:#6a7690;--blue:#2f5bea;--blue-soft:#eef2ff;--owe:#c8402f;--paid:#12855a}
 *{box-sizing:border-box}
 html,body{margin:0;min-height:100%}
-body{background:var(--bg);color:var(--ink);font:14px/1.5 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body{background:var(--bg);color:var(--ink);font:14px/1.5 Geist,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 button,input,select{font:inherit;color:inherit}
 h1,h2,h3,p,ul{margin:0}ul{padding:0;list-style:none}
 .muted{color:var(--muted)}
