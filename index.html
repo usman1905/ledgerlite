@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LedgerLite · Customer credit ledger</title>
+<meta name="description" content="LedgerLite replaces the paper khata: track customer credit, record payments, send reminders and print statements.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="brand"><span class="brand__mark"></span><div><b>LedgerLite</b><small>Al-Madina General Store</small></div></div>
+  <div class="kpis" id="kpis"></div>
+</header>
+
+<main class="layout">
+  <aside class="list">
+    <div class="list__head">
+      <input id="search" type="search" placeholder="Search customers" aria-label="Search customers">
+      <button class="btn btn--primary" id="addCustomerBtn">+ Customer</button>
+    </div>
+    <div class="sort">
+      <label for="sortSel">Sort</label>
+      <select id="sortSel"><option value="due">Highest balance</option><option value="name">Name</option><option value="recent">Recent activity</option></select>
+    </div>
+    <ul id="customerList"></ul>
+  </aside>
+
+  <section class="detail" id="detail" aria-live="polite"></section>
+</main>
+
+<dialog id="customerDialog">
+  <form id="customerForm" method="dialog">
+    <h2>New customer</h2>
+    <label>Name<input name="name" required placeholder="Corner Market"></label>
+    <label>Phone (WhatsApp)<input name="phone" required placeholder="03001234567" inputmode="tel"></label>
+    <p class="error" id="customerError" role="alert"></p>
+    <div class="actions"><button type="button" class="btn" data-close>Cancel</button><button class="btn btn--primary">Add customer</button></div>
+  </form>
+</dialog>
+<div class="toast" id="toast" role="status"></div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
