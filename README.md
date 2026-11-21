@@ -1,6 +1,8 @@
-# LedgerLite
+<p align="center"><img src="https://usman1905.github.io/logos/ledgerlite.webp" alt="LedgerLite logo" width="140"></p>
 
-A digital khata for small shops. It replaces the paper credit register: who owes what, since when, and a one-tap reminder to collect it.
+<h1 align="center">LedgerLite</h1>
+
+<p align="center">A digital khata for small shops. It replaces the paper credit register: who owes what, since when, and a one-tap reminder to collect it.</p>
 
 **Live demo:** [usman1905.github.io/ledgerlite](https://usman1905.github.io/ledgerlite/)
 
